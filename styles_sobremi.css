@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Inici Configuració fons*/
+body {
+    background-image: url(img/backround_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Fi Configuració fons*/
+
+/*Inici Configuració Header*/
+header {
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+header div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header div h1 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+header div h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 17px;
+}
+
+header nav ul li {
+    margin-left: 100px;
+}
+
+header nav ul li a {
+    color: #FFFFFFB3;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+}
+
+.active-a {
+    color: #fff;
+}
+
+span {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 3px;
+}
+
+@media only screen and (max-width: 935px) {
+    header div h1 a {
+        font-size: 26px;
+    }
+
+    header div nav ul {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 855px) {
+    header div nav ul {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 805px) {
+    header div nav ul {
+        font-size: 10px;
+    }
+
+}
+/*Fi Configuració Header*/
+
+/*Inici configuració Container*/
+section .container {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    margin-top: 110px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: auto; 
+    margin-bottom: 5%;
+}
+
+.section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #4cd3eb;
+    margin: 4px 10px;
+}
+
+.section-title p {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    margin-bottom: 20px;
+}
+/*Fi configuració Container*/
+
+/*Inici configuració atributs form*/
+.info-contacte {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-contacte h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 1%;
+}
+
+.info-contacte .info-tel  {
+    background: rgba(255, 255, 255, 0.08);
+    color: #444;
+    text-align: center;
+    padding: 20px 0 30px 0;
+    margin-bottom: 30px;
+    width: 25%;
+}
+
+.info-contacte .info-adreça {
+    background: rgba(255, 255, 255, 0.08);
+    color: #444;
+    text-align: center;
+    padding: 20px 0 30px 0;
+    margin-bottom: 30px;
+    width: 35%;
+}
+
+.info-contacte .info-correu {
+    background: rgba(255, 255, 255, 0.08);
+    color: #444;
+    text-align: center;
+    padding: 20px 0 30px 0;
+    margin-bottom: 30px;
+    width: 25%;
+}
+
+.info-contacte p {
+    color: #ffffffd7;
+}
+
+.info-adreça .location, .info-tel .telefon, .info-correu .correu {
+    color: #be72fc;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+/*Fi configuració atributs form*/
+
+/*Inici configuració form*/
+.contact-form {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    max-width: 100%;
+}
+
+.contact-form input {
+   background: rgba(255, 255, 255, 0.08);
+   color: #fff;
+   font-size: 14px;
+   padding: 10px 15px;
+   border-radius: 0;
+   border: 0;
+   max-width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.contact-form input:hover {
+    background: #ffffffea;
+    color: #000;
+}
+
+.contact-form .row  {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-form .row .div-name , .contact-form .row .div-email {
+    width: 49%;
+}
+
+.contact-form .row .input-name , .contact-form .row .input-email {
+    width: 100%;
+}
+
+.contact-form .input-assumpte {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-textarea .message {
+    max-width: 100%;
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-size: 14px;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+.contact-form .form-textarea .message:hover {
+    background: #ffffffea;
+    color: #000;
+    resize: none;
+}
+
+.form-button {
+    text-align: center;
+}
+
+.form-button .button {
+    padding: 12px 30px;
+    background: #be72fc;
+    color: #000;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.form-button .button:hover {
+    background: rgba(181, 0, 253, 0.788)
+}
+
+@media only screen and (max-width: 430px) {
+    .info-contacte p {
+        font-size: 13px;
+    }
+
+    .info-contacte h3 {
+        font-size: 15px;
+    }
+
+    .info-adreça .location, .info-tel .telefon, .info-correu .correu {
+        font-size: 17px;
+    }
+}
+/*Fi configuració form*/
+
+/*Inici configuració galeria*/
+.container-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: auto;
+    width: auto;
+    justify-content: center;
+}
+
+.container-galeria .div-img {
+    width: 368px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 450px) {
+   .section-title p {
+    font-size: 30px;
+   }
+
+   .container-galeria .div-img {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 10px;
+   }
+
+   .container-galeria .div-img img {
+    max-width: 100%;
+   }
+    
+}
+/*Fi configuració galeria*/
+
+/*Inici configuració sobre mi*/
+.container-sobremi {
+    display: flex;
+}
+
+.container-sobremi .div-sobremi-img {
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.div-sobremi-text h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #4cd3eb;;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 8px;
+}
+
+.div-sobremi-text p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.cont-llistes {
+    display: flex;
+}
+
+.cont-llistes .llista-1, .llista-2 {
+    padding-right: 12px;
+}
+
+.llista-2 {
+    padding-left: 12px;
+}
+
+.llista-1 ul, .llista-2 ul {
+    list-style: none;
+    color: #fff;
+}
+
+.cont-llistes li {
+    margin-bottom: 10px;
+}
+
+.cont-llistes span {
+    border-bottom: 0;
+}
+
+.cont-llistes i {
+    color: #4cd3eb;
+}
+
+.cont-llistes strong {
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .container-sobremi {
+        display: block;
+    }
+
+    .container-sobremi .div-sobremi-img {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .container-sobremi .div-sobremi-img {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .container-sobremi .div-sobremi-img img {
+        max-width: 100%;
+    }
+}
+/*Fi configuració sobre mi*/

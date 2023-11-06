@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_sobremi.css"><!-- Enllaç al css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"><!-- Enllaç a la biblioteca de Font Awsome -->
+    <script src="js/index.js"></script> <!-- Enllaç del js per a validar el formulari -->
+    <title>Contacte Ion</title>
+</head>
+<body>
+    <header><!-- Encapçalament de la pàgina "Contacte" -->
+        <div>
+            <h1>
+                <a href="index.html">Ion Vera</a><!-- Enllaç a la pàgina "Inici" -->
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Inici</a><!-- Enllaç a la pàgina "Inici" -->
+                    </li>
+                    <li>
+                        <a href="sobremi.html">Sobre mi</a><!-- Enllaç a la pàgina "Sobre mi" -->
+                    </li>
+                    <li>
+                        <a href="galeria.html">Galeria</a><!-- Enllaç a la pàgina "Galeria" -->
+                    </li>
+                    <li>
+                        <a class="active-a" href="contacte.html"><span>Contacte</span></a><!-- Enllaç a la pàgina "Contacte" amb clase active -->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container"><!-- Titol del contenidor de cada pàgina -->
+            <div class="section-title">
+                <h2>Contacte</h2>
+                <p>Contacta'm</p>
+            </div>
+            <div class="info-contacte">
+                <div class="info-tel">
+                    <i class="fa-solid fa-phone telefon"></i>
+                    <h3>Truca'm</h3>
+                    <p>+34 665 76 37 90</p>
+                </div>
+                <div class="info-adreça">
+                    <i class="fa-solid fa-location-dot location"></i>
+                    <h3>Adreça</h3>
+                    <p>Avinguda de Tarragona, 86</p>
+                </div>
+                <div class="info-correu">
+                    <i class="fa-solid fa-envelope correu"></i>
+                    <h3>Correu</h3>
+                    <p>ivera@ies-eugeni.cat</p>
+                </div>
+            </div>
+            <form class="contact-form" onsubmit="return validarFormulari()" action="index.html" method="post"><!-- Formulari -->
+                <!-- El validarFormulari es el que hem fet al js, serveix per a que quan li donem al boto, ens retorni el js -->
+                <div class="row">
+                    <div class="div-name"><!-- Input del nom -->
+                        <input class="input-name" type="text" name="name" id="name" placeholder="El teu nom" required>
+                    </div>
+                    <div class="div-email"><!-- Input de l'email -->
+                        <input class="input-email" type="email" name="email" id="email" placeholder="El teu correu"
+                            required>
+                    </div>
+                </div>
+                <div class="form-assumpte"><!-- Input de l'assumpte -->
+                    <input class="input-assumpte" type="text" name="assumpte" id="assumpte" placeholder="Assumpte"
+                        required>
+                </div>
+                <div class="form-textarea"><!-- Area de text -->
+                    <textarea class="message" name="message" rows="5" placeholder="Missatge" required></textarea>
+                </div>
+                <div class="form-button"><!-- Botó per enviar el formulari -->
+                    <button class="button" type="submit">Enviar Formulari</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
