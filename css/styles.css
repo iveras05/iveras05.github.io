@@ -38,7 +38,7 @@ img {
 
 /*Img fons*/
 body {
-    background-image: url(img/backround_img.png);
+    background-image: url(backround_img.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
